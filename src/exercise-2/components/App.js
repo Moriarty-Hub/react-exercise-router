@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/App.css';
-import {BrowserRouter, Link, Switch} from 'react-router-dom';
+import {BrowserRouter, NavLink, Switch} from 'react-router-dom';
 import {Route} from "react-router";
 import Home from "./Home";
 import MyProfile from "./MyProfile";
@@ -17,16 +17,16 @@ class App extends Component {
                     <nav>
                         <ul>
                             <li>
-                                <Link to="/" >Home</Link>
+                                <NavLink activeStyle={{textDecoration: 'underline'}} exact to="/" >Home</NavLink>
                             </li>
                             <li>
-                                <Link to="/products">Products</Link>
+                                <NavLink activeStyle={{textDecoration: 'underline'}} to="/products">Products</NavLink>
                             </li>
                             <li>
-                                <Link to="/my-profile">My Profile</Link>
+                                <NavLink activeStyle={{textDecoration: 'underline'}} to="/my-profile">My Profile</NavLink>
                             </li>
                             <li>
-                                <Link to="/about-us">About Us</Link>
+                                <NavLink activeStyle={{textDecoration: 'underline'}} to="/about-us">About Us</NavLink>
                             </li>
                         </ul>
                     </nav>

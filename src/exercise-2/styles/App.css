@@ -18,6 +18,7 @@ nav ul li {
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 .home-content, .my-profile-content, .about-us-content, .product-list, .product {
